@@ -11,5 +11,5 @@ My pure CSS art as a part of [ZTM Animation Nation](https://github.com/zero-to-m
 
 ## Browser support
 * Webkit (Chrome, Opera and other) supported
-* Quantum (Firefox and other): supported
+* Quantum (Firefox and other) supported
 * MS IE & EDGE not supported
