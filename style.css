@@ -208,8 +208,8 @@ body {
 	border-radius: 50%;
 	background: -o-radial-gradient(#ec7, #edb);
 	background: radial-gradient(#ec7, #edb);
-	-webkit-box-shadow: 0 0 30vmin 15vmin #edb;
-	        box-shadow: 0 0 30vmin 15vmin #edb;
+	-webkit-box-shadow: 0 0 3vmin 1.5vmin #edb;
+	        box-shadow: 0 0 3vmin 1.5vmin #edb;
 	-webkit-animation: sun 120s infinite linear;
 	        animation: sun 120s infinite linear;
 }
