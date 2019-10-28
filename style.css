@@ -18,7 +18,7 @@ body {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #212529;
+	color: #222;
 	text-align: left;
 	background-color: #fff;
 }
@@ -37,23 +37,23 @@ body {
 }
 
 @-webkit-keyframes night {
-	0% { background-color: #583114 }
-	5% { background-color: #cc8450 }
-	25% { background-color: #f3b88e }
-	45% { background-color: #cc8450 }
-	50% { background-color: #583114 }
-	75% { background-color: #1b080a }
-	100% { background-color: #583114 }
+	0% { background-color: #531 }
+	5% { background-color: #c85 }
+	25% { background-color: #fb8 }
+	45% { background-color: #c85 }
+	50% { background-color: #531 }
+	75% { background-color: #101 }
+	100% { background-color: #531 }
 }
 
 @keyframes night {
-	0% { background-color: #583114 }
-	5% { background-color: #cc8450 }
-	25% { background-color: #f3b88e }
-	45% { background-color: #cc8450 }
-	50% { background-color: #583114 }
-	75% { background-color: #1b080a }
-	100% { background-color: #583114 }
+	0% { background-color: #531 }
+	5% { background-color: #c85 }
+	25% { background-color: #fb8 }
+	45% { background-color: #c85 }
+	50% { background-color: #531 }
+	75% { background-color: #101 }
+	100% { background-color: #531 }
 }
 
 .layer {
@@ -152,33 +152,35 @@ body {
 	position: absolute;
 	border-radius: 50%;
 	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0 0 3px 2px #fff;
+	        box-shadow: 0 0 3px 2px #fff;
 	-webkit-animation: star 5s ease-in-out infinite;
 	        animation: star 5s ease-in-out infinite;
 }
 
 .star-xs {
-	width: 3px;
-	height: 3px;
+	width: .2vmin;
+	height: .2vmin;
 }
 
 .star-sm {
-	width: 5px;
-	height: 5px;
+	width: .4vmin;
+	height: .4vmin;
 }
 
 .star-md {
-	width: 7px;
-	height: 7px;
+	width: .6vmin;
+	height: .6vmin;
 }
 
 .star-lg {
-	width: 10px;
-	height: 10px;
+	width: .8vmin;
+	height: .8vmin;
 }
 
 .star-xl {
-	width: 15px;
-	height: 15px;
+	width: 1vmin;
+	height: 1vmin;
 }
 
 @-webkit-keyframes star {
@@ -198,28 +200,28 @@ body {
 /* Sun */
 
 .sun {
+	height: 20vmin;
+	width: 20vmin;
 	position: absolute;
-	height: 10vh;
-	width: 10vh;
 	bottom: 0;
 	right: 45%;
-	background: -o-radial-gradient(#ecc56b, #e4ddb7);
-	background: radial-gradient(#ecc56b, #e4ddb7);
-	-webkit-box-shadow: 0 0 400px 150px #e2d9a2;
-	        box-shadow: 0 0 400px 150px #e2d9a2;
 	border-radius: 50%;
+	background: -o-radial-gradient(#ec7, #edb);
+	background: radial-gradient(#ec7, #edb);
+	-webkit-box-shadow: 0 0 30vmin 15vmin #edb;
+	        box-shadow: 0 0 30vmin 15vmin #edb;
 	-webkit-animation: sun 120s infinite linear;
 	        animation: sun 120s infinite linear;
 }
 
 @-webkit-keyframes sun {
-	0% { -webkit-transform: rotate(-360deg) translate(-70vh) rotate(360deg); transform: rotate(-360deg) translate(-70vh) rotate(360deg) }
-	100% { -webkit-transform: rotate(0deg) translate(-70vh) rotate(0deg); transform: rotate(0deg) translate(-70vh) rotate(0deg) }
+	0% { -webkit-transform: rotate(-360deg) translate(-70vmin) rotate(360deg); transform: rotate(-360deg) translate(-70vmin) rotate(360deg) }
+	100% { -webkit-transform: rotate(0deg) translate(-70vmin) rotate(0deg); transform: rotate(0deg) translate(-70vmin) rotate(0deg) }
 }
 
 @keyframes sun {
-	0% { -webkit-transform: rotate(-360deg) translate(-70vh) rotate(360deg); transform: rotate(-360deg) translate(-70vh) rotate(360deg) }
-	100% { -webkit-transform: rotate(0deg) translate(-70vh) rotate(0deg); transform: rotate(0deg) translate(-70vh) rotate(0deg) }
+	0% { -webkit-transform: rotate(-360deg) translate(-70vmin) rotate(360deg); transform: rotate(-360deg) translate(-70vmin) rotate(360deg) }
+	100% { -webkit-transform: rotate(0deg) translate(-70vmin) rotate(0deg); transform: rotate(0deg) translate(-70vmin) rotate(0deg) }
 }
 
 /* Moon */
@@ -237,14 +239,14 @@ body {
 }
 
 .moon {
-	width: 10vh;
-	height: 10vh;
+	width: 15vmin;
+	height: 15vmin;
 	top: 30vh;
 	right: 45%;
 	background: -o-radial-gradient(#feb, #fee);
 	background: radial-gradient(#feb, #fee);
-	-webkit-box-shadow: 0 0 100px 50px #fda;
-	        box-shadow: 0 0 100px 50px #fda;
+	-webkit-box-shadow: 0 0 10vmin 5vmin #fda;
+	        box-shadow: 0 0 10vmin 5vmin #fda;
 }
 
 .moon::before {
@@ -348,28 +350,28 @@ body {
 }
 
 .cloud-xs {
-	width: 30px;
-	height: 20px;
+	width: 6vmin;
+	height: 4vmin;
 }
 
 .cloud-sm {
-	width: 50px;
-	height: 30px;
+	width: 10vmin;
+	height: 6vmin;
 }
 
 .cloud-md {
-	width: 70px;
-	height: 40px;
+	width: 14vmin;
+	height: 8vmin;
 }
 
 .cloud-lg {
-	width: 90px;
-	height: 50px;
+	width: 18vmin;
+	height: 10vmin;
 }
 
 .cloud-xl {
-	width: 110px;
-	height: 60px;
+	width: 22vmin;
+	height: 12vmin;
 }
 
 @-webkit-keyframes cloud {
@@ -407,58 +409,58 @@ body {
 }
 
 .mountain-ca {
-	background: -webkit-gradient(linear, left bottom, left top, from(#e56), to(#e85));
 	background: -o-linear-gradient(bottom, #e56 0%, #e85 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(#e56), to(#e85));
 	background: linear-gradient(to top, #e56 0%, #e85 100%);
 }
 
 .mountain-cb {
-	background: -webkit-gradient(linear, left bottom, left top, from(#c45), to(#c63));
 	background: -o-linear-gradient(bottom, #c45 0%, #c63 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(#c45), to(#c63));
 	background: linear-gradient(to top, #c45 0%, #c63 100%);
 }
 
 .mountain-cc {
-	background: -webkit-gradient(linear, left bottom, left top, from(#923), to(#a43));
 	background: -o-linear-gradient(bottom, #923 0%, #a43 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(#923), to(#a43));
 	background: linear-gradient(to top, #923 0%, #a43 100%);
 }
 
 .mountain-xs {
-	width: 300px;
-	height: 300px;
-	bottom: -200px;
+	width: 15vmax;
+	height: 15vmax;
+	bottom: -10vmax;
 }
 
 .mountain-md {
-	width: 400px;
-	height: 400px;
-	bottom: -260px;
+	width: 20vmax;
+	height: 20vmax;
+	bottom: -13vmax;
 }
 
 .mountain-lg {
-	width: 500px;
-	height: 500px;
-	bottom: -330px;
+	width: 25vmax;
+	height: 25vmax;
+	bottom: -17vmax;
 }
 
 .mountain-xl {
-	width: 600px;
-	height: 600px;
-	bottom: -400px;
+	width: 30vmax;
+	height: 30vmax;
+	bottom: -20vmax;
 }
 
 /* Ground */
 
 .ground {
 	position: absolute;
-	bottom: -30%;
-	left: -10%;
-	width: 70%;
-	height: 40%;
+	bottom: -30vmin;
+	left: -10vw;
+	width: 70vw;
+	height: 40vmin;
 	border-radius: 50%;
-	background: -webkit-gradient(linear, left bottom, left top, from(rgb(90, 23, 33)), to(rgb(114, 55, 45)));
 	background: -o-linear-gradient(bottom, rgb(90, 23, 33) 0%, rgb(114, 55, 45) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(rgb(90, 23, 33)), to(rgb(114, 55, 45)));
 	background: linear-gradient(to top, rgb(90, 23, 33) 0%, rgb(114, 55, 45) 100%);
 	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
 	        box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
@@ -470,8 +472,8 @@ body {
 	width: 200%;
 	height: 110%;
 	border-radius: 50%;
-	background: -webkit-gradient(linear, left bottom, left top, from(rgb(48, 14, 19)), to(rgb(73, 34, 27)));
 	background: -o-linear-gradient(bottom, rgb(48, 14, 19) 0%, rgb(73, 34, 27) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(rgb(48, 14, 19)), to(rgb(73, 34, 27)));
 	background: linear-gradient(to top, rgb(48, 14, 19) 0%, rgb(73, 34, 27) 100%);
 	position: absolute;
 	left: 50%;
@@ -486,8 +488,8 @@ body {
 	width: 80%;
 	height: 110%;
 	border-radius: 50%;
-	background: -webkit-gradient(linear, left bottom, left top, from(rgb(78, 27, 34)), to(rgb(97, 51, 42)));
 	background: -o-linear-gradient(bottom, rgb(78, 27, 34) 0%, rgb(97, 51, 42) 100%);
+	background: -webkit-gradient(linear, left bottom, left top, from(rgb(78, 27, 34)), to(rgb(97, 51, 42)));
 	background: linear-gradient(to top, rgb(78, 27, 34) 0%, rgb(97, 51, 42) 100%);
 	position: absolute;
 	left: 35%;
@@ -499,8 +501,6 @@ body {
 /* Trees */
 
 .tree {
-	width: 30px;
-	height: 50px;
 	position: absolute;
 	-webkit-animation: tree 30s ease-in-out infinite alternate;
 	        animation: tree 30s ease-in-out infinite alternate;
@@ -514,7 +514,7 @@ body {
 	content: "";
 	display: block;
 	width: 100%;
-	background-size: 50.05% 100%;
+	background-size: 51% 100%;
 	background-repeat: no-repeat;
 }
 
@@ -531,63 +531,63 @@ body {
 }
 
 .tree-xs {
-	width: 30px;
-	height: 50px;
+	width: 3vmin;
+	height: 5vmin;
 }
 
 .tree-sm {
-	width: 45px;
-	height: 75px;
+	width: 4.5vmin;
+	height: 7.5vmin;
 }
 
 .tree-md {
-	width: 60px;
-	height: 100px;
+	width: 6vmin;
+	height: 10vmin;
 }
 
 .tree-xs {
-	width: 90px;
-	height: 150px;
+	width: 9vmin;
+	height: 15vmin;
 }
 
 .tree-xl {
-	width: 120px;
-	height: 200px;
+	width: 12vmin;
+	height: 20vmin;
 }
 
 .tree-ca::before {
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 55, 29))), -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 55, 29)));
 	background-image: -o-linear-gradient(left top, transparent 50%, rgb(141, 55, 29) 50%), -o-linear-gradient(right top, transparent 50%, rgb(141, 55, 29) 50%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 55, 29))), -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 55, 29)));
 	background-image: linear-gradient(to right bottom, transparent 50%, rgb(141, 55, 29) 50%), linear-gradient(to left bottom, transparent 50%, rgb(141, 55, 29) 50%);
 }
 
 .tree-ca::after {
-	background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(50%, rgb(141, 55, 29))), -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, rgb(141, 55, 29)));
 	background-image: -o-linear-gradient(left bottom, transparent 50%, rgb(141, 55, 29) 50%), -o-linear-gradient(right bottom, transparent 50%, rgb(141, 55, 29) 50%);
+	background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(50%, rgb(141, 55, 29))), -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, rgb(141, 55, 29)));
 	background-image: linear-gradient(to right top, transparent 50%, rgb(141, 55, 29) 50%), linear-gradient(to left top, transparent 50%, rgb(141, 55, 29) 50%);
 }
 
 .tree-cb::before {
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 89, 29))), -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 89, 29)));
 	background-image: -o-linear-gradient(left top, transparent 50%, rgb(141, 89, 29) 50%), -o-linear-gradient(right top, transparent 50%, rgb(141, 89, 29) 50%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 89, 29))), -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 89, 29)));
 	background-image: linear-gradient(to right bottom, transparent 50%, rgb(141, 89, 29) 50%), linear-gradient(to left bottom, transparent 50%, rgb(141, 89, 29) 50%);
 }
 
 .tree-cb::after {
-	background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(50%, rgb(141, 89, 29))), -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, rgb(141, 89, 29)));
 	background-image: -o-linear-gradient(left bottom, transparent 50%, rgb(141, 89, 29) 50%), -o-linear-gradient(right bottom, transparent 50%, rgb(141, 89, 29) 50%);
+	background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(50%, rgb(141, 89, 29))), -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, rgb(141, 89, 29)));
 	background-image: linear-gradient(to right top, transparent 50%, rgb(141, 89, 29) 50%), linear-gradient(to left top, transparent 50%, rgb(141, 89, 29) 50%);
 }
 
 .tree-cc::before {
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 61, 29))), -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 61, 29)));
 	background-image: -o-linear-gradient(left top, transparent 50%, rgb(141, 61, 29) 50%), -o-linear-gradient(right top, transparent 50%, rgb(141, 61, 29) 50%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 61, 29))), -webkit-gradient(linear, right top, left bottom, color-stop(50%, transparent), color-stop(50%, rgb(141, 61, 29)));
 	background-image: linear-gradient(to right bottom, transparent 50%, rgb(141, 61, 29) 50%), linear-gradient(to left bottom, transparent 50%, rgb(141, 61, 29) 50%);
 }
 
 .tree-cc::after {
-	background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(50%, rgb(141, 61, 29))), -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, rgb(141, 61, 29)));
 	background-image: -o-linear-gradient(left bottom, transparent 50%, rgb(141, 61, 29) 50%), -o-linear-gradient(right bottom, transparent 50%, rgb(141, 61, 29) 50%);
+	background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, transparent), color-stop(50%, rgb(141, 61, 29))), -webkit-gradient(linear, right bottom, left top, color-stop(50%, transparent), color-stop(50%, rgb(141, 61, 29)));
 	background-image: linear-gradient(to right top, transparent 50%, rgb(141, 61, 29) 50%), linear-gradient(to left top, transparent 50%, rgb(141, 61, 29) 50%);
 }
 
