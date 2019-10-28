@@ -8,3 +8,8 @@ My pure CSS art as a part of [ZTM Animation Nation](https://github.com/zero-to-m
 * JS: prohibited
 * SVGs: prohibited
 * At least one animation
+
+## Browser support
+* Webkit (Chrome, Opera and other)
+* Firefox
+* MS IE & EDGE not supported
