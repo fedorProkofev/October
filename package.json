@@ -1,0 +1,24 @@
+{
+  "name": "october",
+  "version": "0.1.0",
+  "description": "Pure CSS art",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fprokofiev/october.git"
+  },
+  "keywords": [
+    "october",
+    "css",
+    "art"
+  ],
+  "author": "Fyodor Prokofiev",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fprokofiev/october/issues"
+  },
+  "homepage": "https://github.com/fprokofiev/october#readme"
+}
